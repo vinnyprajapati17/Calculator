@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Calculator Container -->
+    <div class="calculator">
+
+        <!-- Display screen (readonly so user cannot type manually) -->
+        <input type="text" placeholder="0" id="inputBox" readonly>
+
+        <!-- First row of buttons -->
+        <div>
+            <button class="operator">AC</button> <!-- Clear All -->
+            <button class="operator">DEL</button> <!-- Delete last digit -->
+            <button class="operator">%</button>  <!-- Modulus operator -->
+            <button class="operator">/</button>  <!-- Division -->
+        </div>
+
+        <!-- Second row of buttons -->
+        <div>
+            <button>7</button>
+            <button>8</button> 
+            <button>9</button> 
+            <button class="operator">*</button> <!-- Multiplication -->
+        </div>
+
+        <!-- Third row of buttons -->
+        <div>
+            <button>4</button>
+            <button>5</button> 
+            <button>6</button> 
+            <button class="operator">-</button> <!-- Subtraction -->
+        </div>
+
+        <!-- Fourth row of buttons -->
+        <div>
+            <button>1</button>
+            <button>2</button> 
+            <button>3</button> 
+            <button class="operator">+</button> <!-- Addition -->
+        </div>
+
+        <!-- Fifth row of buttons -->
+        <div>
+            <button>00</button> <!-- Double zero -->
+            <button>0</button> 
+            <button>.</button> <!-- Decimal point -->
+            <button class="equalBtn">=</button> <!-- Equals / Calculate -->
+        </div>
+    </div>
+    <!-- End calculator container -->
+
+    <!-- Linking JavaScript file -->
+    <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+/* Reset default margins and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+}
+
+/* Center the calculator in the middle of the screen */
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 47, 47);  /* Dark background */
+}
+
+/* Calculator box styling */
+.calculator {
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);     /* Transparent dark background */
+}
+
+/* Display input field styling */
+input {
+    width: 300px;
+    padding: 24px;
+    margin: 10px;
+    background: #609cc2;                /* Blue background */
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.4);
+    font-size: 65px;                    /* Large text for display */
+    text-align: right;                  /* Align numbers to the right */
+    color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Placeholder color */
+input::placeholder {
+    color: #fff;
+}
+
+/* General button styling */
+button {
+    width: 60px;
+    height: 60px;
+    margin: 8px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);     /* Dark buttons */
+    font-size: 24px;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px rgba(73, 73, 73, 0.5);
+}
+
+/* Smaller font for AC & DEL buttons */
+.ac, .del {
+    font-size: 20px;
+}
+
+/* Button hover effects */
+button:hover {
+    color: #fff;
+    background: #609cc2;               /* Turns blue on hover */
+}
+
+/* Equals button special color */
+.equalBtn {
+    background: #609cc2;
+}
+
+/* Operator buttons ( + , - , * , / , % ) are blue text */
+.operator {
+    color: #609cc2;
+}
